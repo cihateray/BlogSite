@@ -1,0 +1,10 @@
+<?php 
+session_start();
+session_destroy();	
+if(isset($_SESSION['ad'])){
+	header('location:production');
+}
+else{
+	header('location:production/login.php');
+}
+?>
